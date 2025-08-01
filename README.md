@@ -3,7 +3,7 @@
 ## 👥 Team Members
 - Mohammad Ashraf Hera – [GitHub Username]
 - Pujan Dey – [pujjipoo]
-- Member 3 – [GitHub Username]
+- Shaown Imtiaz – [Shaown52774]
 - Member 4 – [GitHub Username]
 
 ## 📋 Project Description
