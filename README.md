@@ -1,17 +1,16 @@
 # Software Now - Group Assignment
 
 ## 👥 Team Members
-- Pujan Dey (Team Leader) – [GitHub Username]
-- Member 2 – [GitHub Username]
+- Ashraf Hera (Team Leader) – [GitHub Username]
+- Pujan Fey – [Pujjipoo]
 - Member 3 – [GitHub Username]
+- Member 4 – [GitHub Username]
 
 ## 📋 Project Description
-This is a group assignment for the "Software Now" module. The project aims to [brief description of your assignment goal or topic].
+This is a group assignment for the "Software Now" module.
 
 ## 🛠 Technologies Used
-- HTML
-- CSS
-- JavaScript
+- Pyhtoh
 
 ## 📁 Folder Structure
 ```
