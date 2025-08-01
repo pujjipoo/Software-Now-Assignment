@@ -35,9 +35,10 @@ git clone https://github.com/[your-username]/Software-Now-Assignment.git
 
 | Task | Assigned To | Deadline | Status |
 |------|-------------|----------|--------|
-| Homepage Layout | Pujan | Aug 3 | ✅ Done |
-| CSS Styling | Member 2 | Aug 4 | 🔄 In Progress |
-| JavaScript Logic | Member 3 | Aug 5 | 🔜 Not Started |
+| Task 1 | Ashraf | Aug 8 | 🔄 In Progress |
+| Task 1 | Pujan | Aug 8 | 🔄 In Progress |
+| Task 1 | Member 3 | Aug 8 | 🔜 Not Started |
+| Task 1 | Member 4 | Aug 8 | 🔜 Not Started |
 
 ## 📜 License
 This project is licensed under the MIT License.
