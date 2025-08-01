@@ -1,8 +1,8 @@
 # Software Now - Group Assignment
 
 ## 👥 Team Members
-- Ashraf Hera (Team Leader) – [GitHub Username]
-- Pujan Fey – [Pujjipoo]
+- Mohammad Ashraf Hera – [GitHub Username]
+- Pujan Dey – [pujjipoo]
 - Member 3 – [GitHub Username]
 - Member 4 – [GitHub Username]
 
@@ -10,11 +10,11 @@
 This is a group assignment for the "Software Now" module.
 
 ## 🛠 Technologies Used
-- Pyhtoh
+- Python
 
 ## 📁 Folder Structure
 ```
-src/       → Main source code (HTML, CSS, JS)
+src/       → Main source code (.py)
 docs/      → Assignment documents or reports
 assets/    → Images and media
 ```
