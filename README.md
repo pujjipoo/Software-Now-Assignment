@@ -1,7 +1,7 @@
 # Software Now - Group Assignment
 
 ## 👥 Team Members
-- Mohammed Ashrafujjaman Hera – [GitHub Username]
+- Mohammed Ashrafujjaman Hera – [Mohammed-Ashrafujjaman]
 - Pujan Dey – [pujjipoo]
 - Shaown Imtiaz – [Shaown52774]
 - Member 4 – [GitHub Username]
