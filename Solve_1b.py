@@ -7,16 +7,36 @@ Shaown Imtiaz - 396121
 Al-Amin Dhaly - 395230
 
 '''
-# square box print using stars
+try:
+    # Input validation
+    # Integer -> Pujan
+    size_input = input("Enter the size of the square: ")
 
-# input taking -> pujan
+    # Check if float -> Al-Amin
+    try:
+        size_float = float(size_input)
+        # Check if char/str -> Ashraf
+        if not size_float.is_integer():
+            print("Invalid input: Please enter a whole number (integer).")
+        else:
+            size = int(size_float)
 
-#input validation
-    # integer -> pujan
-    # float -> al-amin
-    # char/str -> ashraf
-    
-#logical implementation
-    # loop -> Imtiaz
-    
-#result -> al-amin
+            # ---------------------------------------
+            # Logical implementation
+            # Loop -> Imtiaz
+
+            if size <= 0:
+                print("Invalid input: Size must be a positive integer.")
+            else:
+                # Result -> Al-Amin
+                print("Here is your square:")
+                for i in range(size):
+                    print("* " * size)
+
+    except ValueError:
+        print("Invalid input: Please enter a numeric value.")
+
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+
+# End of Part b
