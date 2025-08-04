@@ -10,7 +10,7 @@ Al-Amin Dhaly - 395230
 def input_validation(x):
     # integer -> Ashraf
     try:
-        # Trying to convert string input from user into a Interger number
+        # Trying to convert string input from user into an Integer number
         temp_x = int(x)
         x = temp_x
     except ValueError:
@@ -28,7 +28,6 @@ def input_validation(x):
                 temp_x = ord(x[0])
                 x = temp_x
                 print(f"user provided a char or string. Converting first char into Ascii equivalent: {x}")
-            pass
     return x
             
 
@@ -46,25 +45,27 @@ while restart:
     b = input_validation(b_input)
     c = input_validation(c_input)
 
-    # manual debuging
+    # manual debugging
     # print(f"a: {a}\nb: {b}\nc: {c}")
     
     if a <= 0 or b <= 0 or c <= 0:
         print("NO, these three lengths CANNOT form a triangle.")
-    # a + b > c -> condition cheking if a + b greater than c (Ashraf)
-    elif a + b > c :
-        # b + c > a -> (Imtiaz) condition cheking if b + c greater than a
-        # al-amin will implement his code here
-        pass # remove this al-amin
-       
+    # a + b > c -> condition checking if a + b greater than c (Ashraf)
+    elif a + b > c:
+        # b + c > a -> (Imtiaz) condition checking if b + c greater than a
+        if b + c > a:
+            # Al-amin implementing the last condition: c + a > b
+            if c + a > b:
+                print("YES, these three lengths CAN form a triangle.")
+            else:
+                print("NO, these three lengths CANNOT form a triangle.")
+        else:
+            print("NO, these three lengths CANNOT form a triangle.")
     else: 
         print("NO, these three lengths CANNOT form a triangle.")
 
     # asking user if they want to restart the program again.
     # Al-amin
     choice = input("Press n/no to exit or Press any other button to restart: ")
-    if choice == "n" or choice == "no":
+    if choice.lower() == "n" or choice.lower() == "no":
         restart = False
-    
-        
-        
