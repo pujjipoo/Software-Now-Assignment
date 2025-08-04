@@ -7,6 +7,7 @@ Shaown Imtiaz - 396121
 Al-Amin Dhaly - 395230
 '''
 
+# This function validate input received form user. Also this code is inspired from class lecture.
 def input_validation(x):
     # integer -> Ashraf
     try:
@@ -24,6 +25,7 @@ def input_validation(x):
             
 
 # code for inputing three numbers, and check if these three numbers can form a triangle.
+# This code can run repeatedly. 
 restart = True
 while restart:
     # basic input -> Imtiaz

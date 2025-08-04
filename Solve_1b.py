@@ -7,36 +7,29 @@ Shaown Imtiaz - 396121
 Al-Amin Dhaly - 395230
 
 '''
+# taking input from user
+size_input = input("Enter the size of the square: ")
+
+# Input validation. This code is inspired by class lecture
 try:
     # Input validation
-    # Integer -> Pujan
-    size_input = input("Enter the size of the square: ")
+    # Integer -> Pujan 
+    pass
 
-    # Check if float -> Al-Amin
+except ValueError:
+    # print(f"An unexpected error occurred: {e}")
+    
     try:
-        size_float = float(size_input)
-        # Check if char/str -> Ashraf
-        if not size_float.is_integer():
-            print("Invalid input: Please enter a whole number (integer).")
-        else:
-            size = int(size_float)
-
-            # ---------------------------------------
-            # Logical implementation
-            # Loop -> Imtiaz
-
-            if size <= 0:
-                print("Invalid input: Size must be a positive integer.")
-            else:
-                # Result -> Al-Amin
-                print("Here is your square:")
-                for i in range(size):
-                    print("* " * size)
-
+        # Check if float -> Al-Amin
+        pass
+        
     except ValueError:
-        print("Invalid input: Please enter a numeric value.")
-
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
-
-# End of Part b
+        # print("Invalid input: Please enter a numeric value.")
+        # Check if char/str -> Ashraf
+        if size_input == "":
+            sq_size = 5 # default value in case user does not provide any value
+        else: 
+            sq_size = ord(size_input[0])
+# ---------------------------------------
+# Logical implementation
+# Loop -> Imtiaz
