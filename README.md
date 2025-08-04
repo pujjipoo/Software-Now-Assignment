@@ -4,7 +4,7 @@
 - Mohammed Ashrafujjaman Hera – [Mohammed-Ashrafujjaman]
 - Pujan Dey – [pujjipoo]
 - Shaown Imtiaz – [Shaown52774]
-- Member 4 – [GitHub Username]
+- Al-Amin Dhaly – [alamindhaly]
 
 ## 📋 Project Description
 This is a group assignment for the "Software Now" module.
@@ -22,7 +22,7 @@ assets/    → Images and media
 ## 🔧 How to Run
 1. Clone this repository:
 ```bash
-git clone https://github.com/[your-username]/Software-Now-Assignment.git
+[git clone https://github.com/pujjipoo/Software-Now-Assignment.git]
 ```
 2. Open `index.html` in your browser.
 
