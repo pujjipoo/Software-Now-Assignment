@@ -12,13 +12,11 @@ size_input = input("Enter the size of the square: ")
 sq_size = 0
 # Input validation. This code is inspired by class lecture
 try:
-    # Input validation
-    # Integer -> Pujan 
-    pass
-
+     # Integer -> Pujan 
+    sq_size = int(size_input)
 except ValueError:
-    # print(f"An unexpected error occurred: {e}")
-    
+    # If not an integer, the rest of the validation will handle it
+    pass
     try:
         # Check if float -> Al-Amin
         pass
