@@ -15,8 +15,13 @@ def input_validation(x):
         temp_x = int(x)
         x = temp_x
     except ValueError:
-        try:
-            # float -> Pujan
+        try: 
+            #Float-> Pujan
+# In case if the number is float then below code will convert it to integer
+            temp_x = float(x)
+            int_x=int(round(temp_x))
+            x=int_x
+            print(f"User input a float value, Converting it to integer value: {x}")
             pass
         except ValueError:
             # char/str -> al-amin
@@ -58,8 +63,11 @@ while restart:
         if c + a > b:
             # c + a > b -> (Alamin) condition cheking if c + a greater than b
             print("YES, these three lengths CAN form a triangle.")
-        else:
-            print("NO, these three lengths CANNOT form a triangle.")
+            # a + c > b -> (pujan) condition cheking if a + c greater than b
+            if a + c > b: 
+                print("Yes, these three lengths can form a triangle.")
+            else: 
+                print("NO, these three lengths CANNOT form a triangle.")
     else:
         print("NO, these three lengths CANNOT form a triangle.")
 
