@@ -9,7 +9,7 @@ Al-Amin Dhaly - 395230
 '''
 # taking input from user
 size_input = input("Enter the size of the square: ")
-
+sq_size = 0
 # Input validation. This code is inspired by class lecture
 try:
     # Input validation
@@ -33,3 +33,9 @@ except ValueError:
 # ---------------------------------------
 # Logical implementation
 # Loop -> Imtiaz
+for i in range(sq_size):
+    if i==0 or i==sq_size-1:
+        print(i)
+    print("*"*sq_size)
+else:
+    print("*"+" "*(sq_size-2)+"*")
