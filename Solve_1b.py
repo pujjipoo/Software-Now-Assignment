@@ -34,8 +34,10 @@ except ValueError:
 # Logical implementation
 # Loop -> Imtiaz
 for i in range(sq_size):
-    if i==0 or i==sq_size-1:
-        print(i)
-    print("*"*sq_size)
-else:
-    print("*"+" "*(sq_size-2)+"*")
+    if i == 0 or i == sq_size - 1:
+        print("* " * sq_size)
+    else:
+        if sq_size == 1 or sq_size == 2:
+            print("* " * sq_size)
+        else:
+            print("*" + "  " * (sq_size - 2) + " *")
