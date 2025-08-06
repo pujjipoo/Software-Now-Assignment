@@ -50,14 +50,17 @@ while restart:
     # manual debuging
     # print(f"a: {a}\nb: {b}\nc: {c}")
     
-    if a <= 0 or b <= 0 or c <= 0:
+if a <= 0 or b <= 0 or c <= 0:
         print("NO, these three lengths CANNOT form a triangle.")
     # a + b > c -> condition cheking if a + b greater than c (Ashraf)
     elif a + b > c :
         # b + c > a -> (Imtiaz) condition cheking if b + c greater than a
-        if c + a > b:
+        if b + c > a:
             # c + a > b -> (Alamin) condition cheking if c + a greater than b
-            print("YES, these three lengths CAN form a triangle.")
+            if c + a > b:
+                print("YES, these three lengths CAN form a triangle.")
+            else:
+                print("NO, these three lengths CANNOT form a triangle.")
         else:
             print("NO, these three lengths CANNOT form a triangle.")
     else:
