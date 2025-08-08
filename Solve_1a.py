@@ -17,7 +17,9 @@ def input_validation(x):
     except ValueError:
         try:
             # float -> Pujan
-            pass
+            # Trying to convert string input from user into a Floating point number
+            temp_x = float(x)
+            x = temp_x
         except ValueError:
             # char/str -> al-amin
             # In case of character input below code will convert it to integer based on Ascii value
