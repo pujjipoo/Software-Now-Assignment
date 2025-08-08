@@ -5,15 +5,13 @@ Mohammed Ashrafujjaman Hera - 391197
 Pujan Dey  - 395076
 Shaown Imtiaz - 396121
 Al-Amin Dhaly - 395230
-
 '''
+
 # taking input from user
 size_input = input("Enter the size of the square: ")
-<<<<<<< HEAD
 sq_size = 0
 # Input validation. This code is inspired by class lecture
 try:
-    # Input validation
     # Integer -> Pujan
     sq_size = int(size_input) 
 
@@ -21,38 +19,21 @@ except ValueError as e:
     print(f"An unexpected error occurred: {e}")  # Pujan's error message
     
     try:
-        # <-- Al-Amin's part starts here: check if float
+        # Alamin's Part: check if float and convert to int
         float_num = float(size_input)
         integer_num = int(round(float_num))
         sq_size = integer_num
         print('its not integer, its a float')
-=======
-
-# Input validation. This code is inspired by class lecture
-try:
-    # Input validation
-    # Integer -> Pujan 
-    pass
-
-except ValueError:
-    # print(f"An unexpected error occurred: {e}")
-    
-    try:
-        # Check if float -> Al-Amin
-        pass
->>>>>>> 7508fc6c31caa18687f09c942f669cb3bb83af61
-        
     except ValueError:
-        # print("Invalid input: Please enter a numeric value.")
         # Check if char/str -> Ashraf
         if size_input == "":
-            sq_size = 5 # default value in case user does not provide any value
+            sq_size = 5  # default value in case user does not provide any value
         else: 
             sq_size = ord(size_input[0])
+
 # ---------------------------------------
 # Logical implementation
 # Loop -> Imtiaz
-<<<<<<< HEAD
 for i in range(sq_size):
     if i == 0 or i == sq_size - 1:
         print("* " * sq_size)
@@ -61,5 +42,3 @@ for i in range(sq_size):
             print("* " * sq_size)
         else:
             print("*" + "  " * (sq_size - 2) + " *")
-=======
->>>>>>> 7508fc6c31caa18687f09c942f669cb3bb83af61
