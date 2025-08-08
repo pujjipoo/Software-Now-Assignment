@@ -5,13 +5,14 @@ Mohammed Ashrafujjaman Hera - 391197
 Pujan Dey  - 395076
 Shaown Imtiaz - 396121
 Al-Amin Dhaly - 395230
-'''
 
+'''
 # taking input from user
 size_input = input("Enter the size of the square: ")
 sq_size = 0
 # Input validation. This code is inspired by class lecture
 try:
+    # Input validation
     # Integer -> Pujan
     sq_size = int(size_input) 
 
@@ -19,15 +20,13 @@ except ValueError as e:
     print(f"An unexpected error occurred: {e}")  # Pujan's error message
     
     try:
-        # Alamin's Part: check if float and convert to int
-        float_num = float(size_input)
-        integer_num = int(round(float_num))
-        sq_size = integer_num
-        print('its not integer, its a float')
+        sq_size = float(size_input)
+        sq_size = int(sq_size)
     except ValueError:
+        # print("Invalid input: Please enter a numeric value.")
         # Check if char/str -> Ashraf
         if size_input == "":
-            sq_size = 5  # default value in case user does not provide any value
+            sq_size = 5 # default value in case user does not provide any value
         else: 
             sq_size = ord(size_input[0])
 
