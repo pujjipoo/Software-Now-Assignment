@@ -7,16 +7,40 @@ Shaown Imtiaz - 396121
 Al-Amin Dhaly - 395230
 
 '''
-# square box print using stars
+# taking input from user
+size_input = input("Enter the size of the square: ")
+sq_size = 0
+# Input validation. This code is inspired by class lecture
+try:
+    # Input validation
+    # Integer -> Pujan
+    sq_size = int(size_input) 
 
-# input taking -> pujan
-
-#input validation
-    # integer -> pujan
-    # float -> al-amin
-    # char/str -> ashraf
+except ValueError as e:
+    print(f"An unexpected error occurred: {e}")  # Pujan's error message
     
-#logical implementation
-    # loop -> Imtiaz
-    
-#result -> al-amin
+    try:
+        # <-- Al-Amin's part starts here: check if float
+        float_num = float(size_input)
+        integer_num = int(round(float_num))
+        sq_size = integer_num
+        print('its not integer, its a float')
+        
+    except ValueError:
+        # print("Invalid input: Please enter a numeric value.")
+        # Check if char/str -> Ashraf
+        if size_input == "":
+            sq_size = 5 # default value in case user does not provide any value
+        else: 
+            sq_size = ord(size_input[0])
+# ---------------------------------------
+# Logical implementation
+# Loop -> Imtiaz
+for i in range(sq_size):
+    if i == 0 or i == sq_size - 1:
+        print("* " * sq_size)
+    else:
+        if sq_size == 1 or sq_size == 2:
+            print("* " * sq_size)
+        else:
+            print("*" + "  " * (sq_size - 2) + " *")
