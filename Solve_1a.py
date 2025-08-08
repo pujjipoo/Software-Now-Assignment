@@ -7,9 +7,10 @@ Shaown Imtiaz - 396121
 Al-Amin Dhaly - 395230
 '''
 
+# This function validate input received form user. Also this code is inspired from class lecture.
 def input_validation(x):
-    # integer -> Ashraf
     try:
+        # integer -> Ashraf
         # Trying to convert string input from user into a Interger number
         temp_x = int(x)
         x = temp_x
@@ -18,6 +19,7 @@ def input_validation(x):
             # float -> Pujan
             pass
         except ValueError:
+            # char/str -> al-amin
             # In case of character input below code will convert it to integer based on Ascii value
             # Below code only take 1st char of a string to convert into integer
             if x == "":
@@ -27,11 +29,11 @@ def input_validation(x):
                 temp_x = ord(x[0])
                 x = temp_x
                 print(f"user provided a char or string. Converting first char into Ascii equivalent: {x}")
-            
     return x
             
 
 # code for inputing three numbers, and check if these three numbers can form a triangle.
+# This code can run repeatedly. 
 restart = True
 while restart:
     # basic input -> Imtiaz
@@ -51,9 +53,7 @@ while restart:
     if a <= 0 or b <= 0 or c <= 0:
         print("NO, these three lengths CANNOT form a triangle.")
     # a + b > c -> condition cheking if a + b greater than c (Ashraf)
-
     elif a + b > c :
-
         # b + c > a -> (Imtiaz) condition cheking if b + c greater than a
         if c + a > b:
             # c + a > b -> (Alamin) condition cheking if c + a greater than b
@@ -62,7 +62,6 @@ while restart:
             print("NO, these three lengths CANNOT form a triangle.")
     else:
         print("NO, these three lengths CANNOT form a triangle.")
-        
 
     # asking user if they want to restart the program again.
     # Al-amin
@@ -71,4 +70,4 @@ while restart:
         restart = False
     
         
-        
+

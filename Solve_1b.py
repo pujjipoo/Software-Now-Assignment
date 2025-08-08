@@ -9,6 +9,7 @@ Al-Amin Dhaly - 395230
 '''
 # taking input from user
 size_input = input("Enter the size of the square: ")
+<<<<<<< HEAD
 sq_size = 0
 # Input validation. This code is inspired by class lecture
 try:
@@ -25,6 +26,21 @@ except ValueError as e:
         integer_num = int(round(float_num))
         sq_size = integer_num
         print('its not integer, its a float')
+=======
+
+# Input validation. This code is inspired by class lecture
+try:
+    # Input validation
+    # Integer -> Pujan 
+    pass
+
+except ValueError:
+    # print(f"An unexpected error occurred: {e}")
+    
+    try:
+        # Check if float -> Al-Amin
+        pass
+>>>>>>> 7508fc6c31caa18687f09c942f669cb3bb83af61
         
     except ValueError:
         # print("Invalid input: Please enter a numeric value.")
@@ -36,6 +52,7 @@ except ValueError as e:
 # ---------------------------------------
 # Logical implementation
 # Loop -> Imtiaz
+<<<<<<< HEAD
 for i in range(sq_size):
     if i == 0 or i == sq_size - 1:
         print("* " * sq_size)
@@ -44,3 +61,5 @@ for i in range(sq_size):
             print("* " * sq_size)
         else:
             print("*" + "  " * (sq_size - 2) + " *")
+=======
+>>>>>>> 7508fc6c31caa18687f09c942f669cb3bb83af61
