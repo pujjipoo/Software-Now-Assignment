@@ -20,9 +20,8 @@ except ValueError as e:
     print(f"An unexpected error occurred: {e}")  # Pujan's error message
     
     try:
-        # Check if float -> Al-Amin
-        pass
-        
+        sq_size = float(size_input)
+        sq_size = int(sq_size)
     except ValueError:
         # print("Invalid input: Please enter a numeric value.")
         # Check if char/str -> Ashraf
@@ -30,6 +29,7 @@ except ValueError as e:
             sq_size = 5 # default value in case user does not provide any value
         else: 
             sq_size = ord(size_input[0])
+
 # ---------------------------------------
 # Logical implementation
 # Loop -> Imtiaz
