@@ -23,11 +23,12 @@ def input_validation(x, side_num):
     except ValueError:
         try:
             # float -> Pujan
+            # Trying to convert string input from user into a float number then an interger number
             float_x = float(x)
             round_x = round(float_x)
             x = int(round_x)
             print(f"\nSide: {side_num}")
-            print(f"User provided a float value for the side {side_num}.\nConverting it to integer.\n")
+            print(f"User provided a float value for the side {side_num}.\nConverting it to integer.\n")           
         except ValueError:
             # char/str -> al-amin
             # In case of character input below code will convert it to integer based on Ascii value

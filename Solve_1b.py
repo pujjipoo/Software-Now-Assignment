@@ -12,7 +12,6 @@ size_input = input("Enter the size of the square: ")
 
 # Input validation. This code is inspired by class lecture
 try:
-    # Input validation
     # Integer -> Pujan 
     sq_size = int(size_input)
     print("\nUser provided an integer number.")
@@ -29,6 +28,7 @@ except ValueError:
             print("\nuser did not provide any value.\nDefault value Assigned.\n")
         else: 
             sq_size = ord(size_input[0])
+
             print(f"\nuser provided a character or string.\nConverting only first character into Ascii equivalent number.\n")
 # ---------------------------------------
 # Logical implementation
